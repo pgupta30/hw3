@@ -10,7 +10,6 @@ class PlacesController < ApplicationController
 
   def new
     @place = Place.new
-    @post = Post.new
   end 
 
   def create
@@ -20,6 +19,7 @@ class PlacesController < ApplicationController
     @place.save
 
     redirect_to "/places"
+  
   end
 
 end

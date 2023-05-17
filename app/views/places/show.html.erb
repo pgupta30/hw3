@@ -3,18 +3,5 @@
 </h1>
 
 <p>
- <% for post in @posts %>
-    <p>
-      <a href="/posts/<%= post["place_id"] %>">
-      <%= post["title"] %>
-      <%= post["description"]%>
-      <%= post["posted_on"]%>
-      </a>
-    </p>
-  <% end %>
-</p>
-
-<p>
   <a href="/posts/new">New Post</a>
 </p>
-
